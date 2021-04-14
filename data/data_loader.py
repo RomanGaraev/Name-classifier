@@ -22,8 +22,9 @@ def get_data(language="eng", url="https://github.com/Gci04/AML-DS-2021/raw/main/
         download(url)
         with ZipFile("nameClassification.zip", 'r') as zipObj:
             zipObj.extractall()
+        os.remove("nameClassification.zip")
     train = read_csv(os.path.join(data_path, "data", f"train_{language}.csv"), encoding="utf-8")
-    test = read_csv(os.path.join(data_path, "data", "data", f"test_{language}.csv"), encoding="utf-8")
+    test = read_csv(os.path.join(data_path, "data",  f"test_{language}.csv"), encoding="utf-8")
     return train, test
 
 

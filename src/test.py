@@ -20,6 +20,16 @@ def hyper_grid():
 
 if __name__ == "__main__":
     print("Baseline LSTM testing...")
+    lstm = NameClassifier(BaselineLSTM())
+    lstm.load("BaselineLSTM.h5")
+    lstm.test()
+
+    print("Perceptron testing...")
+    lstm = NameClassifier(Perceptron())
+    lstm.load("Perceptron.h5")
+    lstm.test()
+
+    print("Custom LSTM testing...")
     lstm = NameClassifier(MyLSTM())
     lstm.load("MyLSTM.h5")
     lstm.test()

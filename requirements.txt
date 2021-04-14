@@ -1,0 +1,7 @@
+numpy
+pandas
+zipp
+wget
+scikit-learn
+tensorflow
+keras
