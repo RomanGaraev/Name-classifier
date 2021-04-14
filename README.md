@@ -25,6 +25,8 @@ A project with comparison of simple LSTM and fully-connected networks in a task 
 ## Dependences installing 
 All the libraries can be pip installed using `pip install -r requirements.txt`
 
+Python >=3.8 is required
+
 ## Train & test
 Go to `src\` folder and run `python train.py` to get hyper-tuned models: simple LSTM, dense network and combined model. 
 
