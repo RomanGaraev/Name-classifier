@@ -12,7 +12,6 @@ A project with comparison of simple LSTM and fully-connected networks in a task 
 │       └── test_rus.csv     
 │       └── train_eng.csv     
 │       └── train_eng.csv    
-│   └── data_loader.py       <- Loading and data normalizing script
 ├── models                   <- Trained models
 │   ├── BaselineLSTM.h5        
 │   └── MyLSTM.h5            
@@ -21,6 +20,7 @@ A project with comparison of simple LSTM and fully-connected networks in a task 
 │   ├── train.py             <- train script
 │   └── test.py              <- test script
 │   └── my_models.py         <- the architecture of models
+│   └── data_loader.py       <- Loading and data normalizing script
 ```
 ## Dependences installing 
 All the libraries can be pip installed using `pip install -r requirements.txt`

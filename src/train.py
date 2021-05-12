@@ -4,7 +4,7 @@ NameClassifier class utilizes MyModel instances to create fully
 worked binary classifier
 """
 from my_models import *
-from data.data_loader import *
+from data_loader import *
 from sklearn.metrics import confusion_matrix
 from os.path import join
 from os import pardir
